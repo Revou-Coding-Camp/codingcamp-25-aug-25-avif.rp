@@ -1,0 +1,84 @@
+.logo {
+    Height: 50px;
+    width: 50px;
+    background-color: rgb(255, 178, 194);
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+}
+
+.main-header {
+    display: flex;
+     padding-left: 20px;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.about-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-text {
+    color: #e5e7eb;
+    text-align: center;
+    font-size: 1.125rem;
+}
+
+.profile-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background: #000;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    padding: 1.5rem;
+    color: #f3f4f6;
+}
+.profile-box p {
+    text-align: left;
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+}
+.profile-box ul {
+    list-style-type: disc;
+    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-answers-section {
+    max-width: 600px;
+    margin: 2rem auto;
+    background: #111;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.3);
+    padding: 1.5rem;
+    color: #fff;
+}
+.answers-title {
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fff;
+}
+.answers-list {
+    color: #fff;
+    text-align: left;
+    font-size: 1.125rem;
+    list-style-type: disc;
+    padding-left: 1.5rem;
+}
+
+.banner {
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

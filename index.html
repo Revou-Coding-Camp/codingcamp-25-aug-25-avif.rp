@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- CSS External -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+    
+<body>
+
+    <!-- Header Content -->
+    <header class="main-header py-[8px] px-[4px]">
+        <!-- Icon -->
+      
+        <div class="logo">
+         <img src="https://th.bing.com/th/id/R.b487129f26eab3ce5c3c2360d3dffe7b?rik=1WFVRtJUZmqErQ&riu=http%3a%2f%2fmuza-chan.net%2faj%2fpoze-weblog%2fkuniyoshi-utagawa-boys-festival.jpg&ehk=Ezvia85a7NDfysZYdIGCEvd6rtfQwkqtlSGnt1LSui4%3d&risl=&pid=ImgRaw&r=0" alt="Photo logo" class="Kathren logo">
+        </div>
+
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Navbar -->
+        <nav class="flex">
+            <a href="#home-page" class="border p-[10px]">Home</a>
+            <a href="#vision-&-mission" class="border p-[10px]">Vision & Mission</a>
+            <a href="#our-profile" class="border p-[10px]">Our Profile</a>
+            <a href="#message-us" class="border p-[10px]">Message Us</a>
+            <a href="#contact-us" class="border p-[10px]">Contact Us</a>
+        
+        </nav>
+    </header>
+    <br>
+    <hr />
+
+    <!-- Main Content --    <main>
+
+        <!-- Home -->
+        <section id="home-page" class="min-h-[900px]">
+            <header>
+                <h2 class="text-center text-[24px] font-extrabold py-[16px]">
+                    Welcome <span id="username"></span> to Our Offical Website!
+                </h2>
+                <p class="text-center text-lg">
+                   <i>"Berakhlak Mulia dan Berilmu"</i></p>
+            <br>
+
+                   <div class="banner">
+                   <img src="https://sdngamol.sch.id/media_library/posts/large/e18b0cbc805d3de371a94fc3da5c51d8.jpg" alt="Photo Banner" class="Kathren Banner">
+                   </div>
+
+                   <br>
+    </header>
+<br>
+<hr />
+
+      </header>
+<hr />
+
+        <!-- Vision N Mission -->
+        <section id="vision-&-mission" class="min-h-[300px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Visi & Misi
+                </h2>
+                <p class="mx-auto max-w-xl text-center text-lg px-4">
+                <b>Visi:</b> <i>Terciptanya Peserta Didik yang Berkualitas, Kompetitif, Inovatif dan Berakhlak Mulia.</i>
+                
+                <p class="mx-auto max-w-xl text-center text-lg px-4">
+                <b>Misi:</b> <i>Mendidik, Membimbing dan Membina Generasi Muda Indonesia.</i>
+                </p>
+
+    <hr />
+        </section>
+
+        <br>
+
+        <!-- Our Profile -->
+        <section id="our-profile" class="min-h-[600px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    About
+                </h2>
+
+                <div class="about-box">
+        <p class="text-center text-gray-100 text-lg">
+            SD Negeri Karangtengah 3 berdiri sejak tahun 1975, merupakan salah satu SD Negeri, menempati tanah seluas 2.706 m².
+            SD Negeri Karangtengah 3 meyakini bahwa literasi merupakan kebutuhan dasar dalam belajar dan berkomunikasi. Keterampilan ini akan berkembang maksimal apabila siswa berada dalam lingkungan belajar yang literat <i>(literate environment)</i>. Untuk mewujudkan hal ini, sekolah memperkaya lingkungannya dengan berbagai perangkat literasi yang dapat ditemukan siswa di dalam maupun di luar kelas. Lingkungan sekolah memiliki beragam permainan tradisional, sarana olah raga dan tanaman mulai dari tanaman buah, hias, dan apotek hidup yang dapat dimanfaatkan sebagai sumber belajar siswa. </p>
+            </header>
+</section>
+
+        <hr />
+
+        <!-- Message Us -->
+        <section id="message-us" class="min-h-[900px]">
+            <header>
+                <h2 class="text-center text-[24px] font-bold py-[16px]">
+                    Message Us
+                </h2>
+            </header>
+
+            <form class="px-[16px]">
+                <label for="name-input" class="block py-[8px]">
+                    Name:
+                    <input type="text"
+                    id="name-input" 
+                    class="border p-[4px] w-full" 
+                    placeholder="Tulis nama anda disini..." 
+                    pattern="[A-Za-z\s]+"\
+                    oninput="this.value = this.value.replace(/[^A-Za-z\s]/g, '')"
+                    required>
+                </label>
+
+                <label for="email-input" class="block py-[8px]">
+                    Email:
+                    <input type="email" id="email-input" class="border p-[4px] w-full" 
+                    placeholder="***@gmail.com" required>
+                    </label>
+
+                    <label for="phone-number-input" class="block py-[8px]">
+                    Phone Number:
+                    <input
+                     type="number"
+                     id="phone-number-input"
+                    class="border p-[4px] w-full"
+                    min="0"
+                    max="100000000000"
+                    placeholder="08*********"
+                    required>
+                </label>
+
+                    <label for="message-input" class="block py-[4px]">
+                    Message:
+                    <textarea id="message-input" class="border p-[4px] w-full h-[100px]" 
+                    placeholder="Tulis komentar anda disini...."
+                    required></textarea>
+                </label>
+
+                  <button type="button" onclick="validateForm();" class="border p-[4px] mt-[8px]">Send Message</button>
+            </form>
+
+            <!-- Answers Preview -->
+         <section id="form-answers" class="form-answers-section" style="display:none;">
+         <h3 class="answers-title">Your Submitted Answers</h3>
+          <ul id="answers-list" class="answers-list"></ul>
+        </section>
+
+        <br>
+        <br>
+
+      <hr />
+
+
+         <!-- Contact Us -->
+        <section id="contact-us" class="min-h-[200px]">
+            <header>
+                <h2 class="text-left text-[24px] font-bold py-[16px] px-4">
+                    Contact Us
+                </header>
+                </h2>
+                <p class="text-left text-[15px] px-4">
+                <b>Email</b></bE>:</b> sdnkarangtengah3.srg@gmail.com<br>
+                <b>Phone Number</b></bE>:</b> 08*********5<br>
+                <b>Address</b></bE>:</b> Tokyo, Japan<br>
+                </section>
+                <br>
+
+       
+
+    </main>
+
+    <hr />
+
+    <!-- Footer Content -->
+    <footer class="text-center">
+        <p> Tugas RevoU Created by Avif R </p>
+    </footer>
+
+    <!-- JS External -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
